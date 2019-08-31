@@ -25,9 +25,36 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style> 
+    #form{
+      padding-left: 20px;
+    }
+      input[type=text] {
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 4px;
+        box-sizing: border-box;
+        border: 1px solid #555;
+        outline: none;
+      }
+      
+      input[type=text]:focus {
+        background-color: lightblue;
+      }
+      </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+<form id="form">
+  <label for="fname">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" id="fname" name="fname" value="">
+  <br>
+  <label for="lname">profession</label>
+  <input type="text" id="work" name="lname" value="">
+  <br>
+  <button type="button" id="submit">submit</button>
+</form>
     <div id="root"></div>
     <!--
       This HTML file is a template.
